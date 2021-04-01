@@ -1,12 +1,11 @@
 import React from 'react'
 
-// Styles
-import { ExampleTitle } from './example.styled'
+import TitleExample from 'components/TitleExample'
 
 const Example = () => {
     return (
         <div>
-            <ExampleTitle>Hello example</ExampleTitle>
+            <TitleExample />
         </div>
     )
 }
