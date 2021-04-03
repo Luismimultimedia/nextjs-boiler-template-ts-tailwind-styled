@@ -3,3 +3,8 @@
 @import "~tailwindcss/utilities";
 
 @import 'modularscale';
+
+$modularscale: (
+  base: 1em,
+  ratio: 1.5
+);
