@@ -1,3 +1,25 @@
+const colors = {
+  primary: {
+    500: "var(--color-primary-500)"
+  },
+  gray: {
+    200: "var(--color-gray-200)",
+    300: "var(--color-gray-300)",
+    400: "var(--color-gray-400)",
+    500: "var(--color-gray-500)",
+  },
+}
+
+const fontSize = {
+  text: {
+    sm: "var(--text-sm)",
+    base: "var(--text-sm)",
+    lg: "var(--text-sm)",
+    xl: "var(--text-sm)",
+    "2xl": "var(--text-sm)",
+  }
+}
+
 module.exports = {
   purge: {
     enable: process.env.NODE_ENV === 'production',
@@ -7,7 +29,10 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors,
+      fontSize,
+    },
   },
   variants: {
     extend: {},

@@ -2,9 +2,27 @@
 @import "~tailwindcss/components";
 @import "~tailwindcss/utilities";
 
-@import 'modularscale';
+@import "~modularscale-sass/stylesheets/modularscale";
 
 $modularscale: (
-  base: 1em,
-  ratio: 1.5
+  base: 12px,
+  ratio: 1.5,
+  425px: (
+    ratio: 1.2,
+  ),
+  768px: (
+    base: 24px,
+    ratio: 1.8,
+  ),
+  1200px: (
+    base: 32px,
+    ratio: 2,
+  ),
+  1440px: (
+    ratio: 2.5,
+  ),
 );
+
+h2 {
+  @include ms-respond(font-size, 5);
+}
