@@ -1,0 +1,11 @@
+@mixin set-text($custom-scale) {
+    @each $base, $properties in $custom-scale {
+      --text-#{$base}: #{rem(ms(map-get($properties, scale)))};
+    }
+}
+
+@mixin set-color($custom-color) {
+  @each $base, $properties in $custom-color {
+    --text-#{$base}: #{$properties};
+  }
+}

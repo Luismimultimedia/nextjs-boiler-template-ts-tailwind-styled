@@ -1,0 +1,64 @@
+@import "~modularscale-sass/stylesheets/modularscale";
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 425px,
+  md: 768px,
+  lg: 1020px,
+  xl: 1440px,
+  xxl: 1920px,
+);
+
+// Grid containers
+$container-max-widths: (
+  sm: 425px,
+  md: 768px,
+  lg: 1020px,
+  xl: 1440px,
+  xxl: 1920px,
+);
+
+$modularscale: (
+  base: 12px,
+  ratio: 1.5,
+  320px: (
+    base: 12px,
+  ),
+  map-get($grid-breakpoints, "md"): (
+    base: 24px,
+  ),
+  map-get($grid-breakpoints, "lg"): (
+    base: 8px,
+  ),
+  map-get($grid-breakpoints, "xxl"): (
+    base: 12px,
+  ),
+);
+
+// Custom scale
+$custom-scale: (
+  "2xl": (
+    scale: 3,
+  ),
+  xl: (
+    scale: 2,
+  ),
+  lg: (
+    scale: 1,
+  ),
+  base: (
+    scale: 0,
+  ),
+  sm: (
+    scale: -1,
+  ),
+  xs: (
+    scale: -2,
+  ),
+);
+
+:root {
+  // fontSize
+  @include set-text($custom-scale);
+}
