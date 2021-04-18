@@ -1,8 +1,23 @@
-import TitleExample from "components/TitleExample";
+// Componets
+import { Button } from "components";
+
 
 const Home = () => {
   return (
-    <TitleExample />
+    <div>
+      <Button
+        title="Primary"
+        variant="primary"
+        onClick={() => console.log("Hola mundo")}
+      />
+
+      <Button
+        title="Primary"
+        variant="secondary"
+        onClick={() => console.log("Hola mundo cruels")}
+      />
+
+    </div>
   );
 };
 

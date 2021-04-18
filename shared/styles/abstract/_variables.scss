@@ -60,10 +60,6 @@ $custom-scale: (
   ),
 );
 
-h4 {
-  font-size: ms(3);
-}
-
 :root {
   // fontSize
   @include set-text($custom-scale);

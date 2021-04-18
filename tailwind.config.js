@@ -1,8 +1,11 @@
 const colors = {
   primary: {
-    500: "var(--color-primary-500)"
+    400: "var(--color-primary-400)",
+    500: "var(--color-primary-500)",
+    600: "var(--color-primary-600)",
   },
   gray: {
+    100: "var(--color-gray-100)",
     200: "var(--color-gray-200)",
     300: "var(--color-gray-300)",
     400: "var(--color-gray-400)",
