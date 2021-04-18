@@ -4,8 +4,3 @@
     }
 }
 
-@mixin set-color($custom-color) {
-  @each $base, $properties in $custom-color {
-    --text-#{$base}: #{$properties};
-  }
-}

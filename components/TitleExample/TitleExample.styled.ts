@@ -4,7 +4,7 @@ import tw from "twin.macro"
 export const Container = styled.div.attrs({
     className: "Container"
 })`
-    ${tw`w-full h-screen flex flex-col justify-center items-center bg-blue-500`}
+    ${tw`w-full h-screen flex flex-col justify-center items-center bg-primary-500`}
 `
 
 export const ExampleTitle = styled.h2.attrs({
